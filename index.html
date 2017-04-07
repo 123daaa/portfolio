@@ -29,17 +29,19 @@
 
 
 
-
-<div class="wideslider" style="height: 713px; background-color:black; color:white;">
+<!-- トップのブロック -->
+<div class="wideslider" style="height: 600px; background-color:black; color:white;">
+    <br />
+    <br />
+    <div class="frontContents"><img src="./img/title_01.png" alt=""></div>
+    <br />
     <div class="title">
-        <ul>
-        <li>　</li>
-        <li><img src="./img/title_01.png" alt=""></li>
-        <li><img src="./img/title_02.png" alt=""></li>
-        <li>　</li>
-        <li>S MARUYAMA</li>
-                <li>Portfolio Website</li>
-        </ul>
+        <!-- ３ワード -->
+        <span style="font:italic 900 20pt Zapfino">Creative, Logical, Delightful</span>
+        <br />
+        <br />
+        <div>S MARUYAMA</div>
+        <div>Portfolio Website</div>
     </div>
 </div>
 
@@ -73,7 +75,7 @@ $(function(){
 	$(window).load(function(){
 		var delaySpeed = 100;
 		var fadeSpeed = 1000;
-		$('ul li').each(function(i){
+		$('.title').each(function(i){
 			$(this).delay(i*(delaySpeed)).css({display:'block',opacity:'0'}).animate({opacity:'1'},fadeSpeed);
 		});
 	});
