@@ -20,6 +20,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </head>
 <body>
+
+
+
+
+
+
+
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DWVJHH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -49,7 +56,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="frontContents">
             <br />
             <a href="https://itunes.apple.com/jp/app/ifuture-calendar/id1019485524?mt=8" target="_blank"><img src="./img/iOS.png" alt="Release App" width="800" height="400"></a><br /><br />
-            <a href="https://bitbucket.org/123daaa/portfolio/src" target="_blank"><img src="./img/Git.png" alt="Git Code" width="800" height="400"></a><br /><br />
+            <a href="https://github.com/123daaa/portfolio" target="_blank"><img src="./img/Git.png" alt="Git Code" width="800" height="400"></a><br /><br />
             <img src="" alt="会員登録" width="800" height="400"><br /><br />
             <img src="" alt="Writing" width="800" height="400"><br /><br />
             <img src="" alt="プレゼンテーション" width="800" height="400"><br /><br />
@@ -59,8 +66,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 
-
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+
+
+
+<!-- title Tade-in -->
+<script>
+$(function(){
+	$(window).load(function(){
+		var delaySpeed = 100;
+		var fadeSpeed = 1000;
+		$('ul li').each(function(i){
+			$(this).delay(i*(delaySpeed)).css({display:'block',opacity:'0'}).animate({opacity:'1'},fadeSpeed);
+		});
+	});
+});
+</script>
+
+
+
+
 
 </body>
 </html>
